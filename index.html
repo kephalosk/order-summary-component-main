@@ -6,6 +6,8 @@
 
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+
         <title>Frontend Mentor | Order summary card</title>
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -21,6 +23,7 @@
 
             .cardBoxCancel {
                 color: hsl(224, 23%, 55%);
+                font-weight: bold;
             }
 
             .cardBoxContent {
@@ -62,10 +65,15 @@
                 white-space: nowrap;
             }
 
+            .priceBarPriceValue {
+                color: hsl(224, 23%, 55%);
+            }
+
             .priceBarRight {
                 align-items: center;
                 display: flex;
                 flex-direction: row;
+                font-weight: bold;
                 justify-content: flex-end;
             }
 
@@ -73,7 +81,7 @@
                 background-color: hsl(0, 0%, 100%);
                 box-shadow: 0 10px 50px -30px hsl(224, 23%, 55%);
                 border-radius: 20px;
-                margin: 100px;
+                margin: 100px 0;
                 width: 450px;
             }
 
@@ -84,8 +92,10 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                color: hsl(223, 47%, 23%);
                 display: flex;
                 flex-direction: column;
+                font-family: "Red Hat Display",sans-serif;
                 justify-content: center;
             }
 
@@ -95,9 +105,15 @@
                 border-radius: 12px;
                 box-shadow: 0 16px 35px -16px hsl(245, 75%, 52%);
                 color: hsl(0, 0%, 100%);
+                font-weight: bold;
+                font-size: 16px;
                 margin-bottom: 32px;
                 padding: 16px 0;
                 width: 100%;
+            }
+
+            h1 {
+                letter-spacing: 1px;
             }
 
             header {
@@ -105,6 +121,7 @@
             }
 
             p {
+                color: hsl(224, 23%, 55%);
                 line-height: 150%;
             }
 
@@ -137,7 +154,7 @@
                         </div>
                     </div>
                     <div class="priceBarRight">
-                        <a>Change</a>
+                        <a href="#">Change</a>
                     </div>
                 </div>
                 <button>Proceed to Payment</button>
