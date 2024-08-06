@@ -12,6 +12,85 @@
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
         <style>
+            @media (max-width: 450px) {
+                .cardBoxContent {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 20px 25px 36px 25px;
+                }
+
+                .cardBoxPriceBar {
+                    background-color: hsl(225, 100%, 98%);
+                    border-radius: 15px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 16px;
+                    margin-bottom: 32px;
+                    margin-top: 8px;
+                }
+
+                .priceBarPriceName {
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding-bottom: 4px;
+                    white-space: nowrap;
+                }
+
+                .priceBarPriceValue {
+                    color: hsl(224, 23%, 55%);
+                    font-size: 14px;
+                }
+
+                .priceBarRight {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 14px;
+                    font-weight: bold;
+                    justify-content: flex-end;
+                }
+            }
+
+            @media (min-width: 451px) {
+                .cardBoxContent {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 20px 50px 50px 50px;
+                }
+
+                .cardBoxPriceBar {
+                    background-color: hsl(225, 100%, 98%);
+                    border-radius: 15px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding: 24px;
+                    margin-bottom: 32px;
+                    margin-top: 8px;
+                }
+
+                .priceBarPriceName {
+                    font-weight: bold;
+                    padding-bottom: 8px;
+                    white-space: nowrap;
+                }
+
+                .priceBarPriceValue {
+                    color: hsl(224, 23%, 55%);
+                }
+
+                .priceBarRight {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: row;
+                    font-weight: bold;
+                    justify-content: flex-end;
+                }
+            }
+
             .attribution {
                 font-size: 11px;
                 text-align: center;
@@ -30,28 +109,10 @@
                 color: hsl(223, 47%, 23%);
             }
 
-            .cardBoxContent {
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 20px 50px 50px 50px;
-            }
-
             .cardBoxImage {
                 border-radius: 20px 20px 0 0;
                 height: auto;
                 width: 100%;
-            }
-
-            .cardBoxPriceBar {
-                background-color: hsl(225, 100%, 98%);
-                border-radius: 15px;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                padding: 24px;
-                margin-bottom: 32px;
-                margin-top: 8px;
             }
 
             .priceBarLeft {
@@ -63,24 +124,6 @@
 
             .priceBarPrice {
                 margin-left: 20px;
-            }
-
-            .priceBarPriceName {
-                font-weight: bold;
-                padding-bottom: 8px;
-                white-space: nowrap;
-            }
-
-            .priceBarPriceValue {
-                color: hsl(224, 23%, 55%);
-            }
-
-            .priceBarRight {
-                align-items: center;
-                display: flex;
-                flex-direction: row;
-                font-weight: bold;
-                justify-content: flex-end;
             }
 
             .priceBarRight a:hover {
