@@ -19,14 +19,107 @@
                 color: hsl(228, 45%, 44%);
             }
 
+            .cardBoxCancel {
+                color: hsl(224, 23%, 55%);
+            }
+
+            .cardBoxContent {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 20px 50px 50px 50px;
+            }
+
+            .cardBoxImage {
+                border-radius: 20px 20px 0 0;
+            }
+
+            .cardBoxPriceBar {
+                background-color: hsl(225, 100%, 98%);
+                border-radius: 15px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 24px;
+                margin-bottom: 32px;
+                margin-top: 8px;
+            }
+
+            .priceBarLeft {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+            .priceBarPrice {
+                margin-left: 20px;
+            }
+
+            .priceBarPriceName {
+                font-weight: bold;
+                padding-bottom: 8px;
+                white-space: nowrap;
+            }
+
+            .priceBarRight {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            #cardBox {
+                background-color: hsl(0, 0%, 100%);
+                box-shadow: 0 10px 50px -30px hsl(224, 23%, 55%);
+                border-radius: 20px;
+                margin: 100px;
+                width: 450px;
+            }
+
             body {
+                align-items: center;
+                background-color: hsl(225, 100%, 94%);
                 background-image: url('images/pattern-background-desktop.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            button {
+                background-color: hsl(245, 75%, 52%);
+                border: 0;
+                border-radius: 12px;
+                box-shadow: 0 16px 35px -16px hsl(245, 75%, 52%);
+                color: hsl(0, 0%, 100%);
+                margin-bottom: 32px;
+                padding: 16px 0;
+                width: 100%;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            p {
+                line-height: 150%;
+            }
+
+            .colors {
+                color: hsl(225, 100%, 94%);
+                color: hsl(245, 75%, 52%);
+                color: hsl(225, 100%, 98%);
+                color: hsl(224, 23%, 55%);
+                color: hsl(223, 47%, 23%);
             }
         </style>
     </head>
     <body>
         <div id="cardBox">
-            <img src="images/illustration-hero.svg">
+            <img class="cardBoxImage" src="images/illustration-hero.svg" alt="picture of dancing person">
             <section class="cardBoxContent">
                 <header>
                     <h1>Order Summary</h1>
@@ -35,9 +128,11 @@
                 </header>
                 <div class="cardBoxPriceBar">
                     <div class="priceBarLeft">
-                        <img src="images/icon-music.svg">
+                        <img src="images/icon-music.svg" alt="music icon">
                         <div class="priceBarPrice">
-                            <label class="priceBarPriceName">Annual Plan</label>
+                            <div class="priceBarPriceName">
+                                <label>Annual Plan</label>
+                            </div>
                             <label class="priceBarPriceValue">$59.99/year</label>
                         </div>
                     </div>
